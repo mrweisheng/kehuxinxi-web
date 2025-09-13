@@ -1,0 +1,321 @@
+// 全局样式变量
+:root {
+  --primary-color: #409eff;
+  --success-color: #67c23a;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --info-color: #909399;
+  --text-color: #303133;
+  --text-color-secondary: #606266;
+  --border-color: #dcdfe6;
+  --background-color: #f5f7fa;
+  --header-height: 60px;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+// 全局重置
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// 应用容器
+.app-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+// 头部样式
+.app-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .app-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    background: linear-gradient(135deg, var(--primary-color), #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .header-actions {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+// 主内容区域
+.app-main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+}
+
+// 欢迎卡片
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--header-height) - 40px);
+  
+  .welcome-card {
+    max-width: 600px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    
+    .welcome-content {
+      line-height: 1.6;
+      
+      p {
+        margin-bottom: 16px;
+        color: var(--text-color-secondary);
+      }
+      
+      ul {
+        margin-left: 20px;
+        
+        li {
+          margin-bottom: 8px;
+          color: var(--text-color-secondary);
+        }
+      }
+    }
+  }
+}
+
+// 主内容区域
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  .feature-card {
+    height: 200px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    .card-icon {
+      margin-bottom: 16px;
+      color: var(--primary-color);
+    }
+    
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-color);
+    }
+    
+    p {
+      color: var(--text-color-secondary);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}
+
+// 侧边栏样式
+.app-aside {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 2px 0 8px 0 rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  min-height: 100vh;
+  border-right: 1px solid var(--border-color);
+  z-index: 2;
+
+  .aside-header {
+    margin-bottom: 32px;
+    .app-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background: linear-gradient(135deg, var(--primary-color), #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .el-menu {
+    width: 100%;
+    border-right: none;
+    background: transparent;
+    .el-menu-item {
+      height: 56px;
+      font-size: 16px;
+      border-radius: 0 24px 24px 0;
+      margin-bottom: 8px;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      .el-icon {
+        margin-right: 12px;
+        font-size: 22px;
+      }
+      &:hover, &.is-active {
+        background: linear-gradient(90deg, #e0e7ff 0%, #f3e8ff 100%);
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 15px;
+    
+    .app-title {
+      font-size: 20px;
+    }
+  }
+  
+  .app-main {
+    padding: 15px;
+  }
+  
+  .welcome-card {
+    margin: 0 15px;
+  }
+  
+  .feature-card {
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  // 响应式侧边栏
+  .app-aside {
+    width: 60px !important;
+    min-width: 60px !important;
+    padding-top: 12px;
+    .aside-header {
+      display: none;
+    }
+    .el-menu {
+      .el-menu-item {
+        justify-content: center;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// 动画效果
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-section,
+.main-content {
+  animation: fadeIn 0.6s ease-out;
+}
+
+// Element Plus 组件样式覆盖
+.el-button {
+  border-radius: var(--border-radius);
+  font-weight: 500;
+}
+
+.el-card {
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.el-card__header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 20px;
+}
+
+.el-card__body {
+  padding: 20px;
+} 
+
+.lead-dialog-center .el-overlay {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.lead-dialog-center .el-dialog {
+  margin: 0 !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  width: 900px !important;
+  max-width: 95vw !important;
+} 

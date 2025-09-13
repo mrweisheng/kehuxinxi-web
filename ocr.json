@@ -1,0 +1,465 @@
+{
+    "success": true,
+    "data": {
+        "records": [
+            {
+                "dataValues": {
+                    "id": 1,
+                    "task_id": "mes6i4supwxor1a9wu",
+                    "file_name": "121314.jpg",
+                    "file_size": 450013,
+                    "file_type": "image/jpeg",
+                    "task_status": "completed",
+                    "start_time": {},
+                    "end_time": {},
+                    "total_time_ms": 55867,
+                    "api_call_time_ms": 54801,
+                    "base64_convert_time_ms": 1,
+                    "customers_extracted": 13,
+                    "customers_imported": 0,
+                    "customers_duplicated": 0,
+                    "customers_failed": 0,
+                    "extracted_data": [
+                        {
+                            "customer_name": "0824/A .9"
+                        },
+                        {
+                            "customer_name": "0824/A7. 源生达"
+                        },
+                        {
+                            "customer_name": "0824/mokiop"
+                        },
+                        {
+                            "customer_name": "0824/Shermay 婷"
+                        },
+                        {
+                            "customer_name": "0824/俊"
+                        },
+                        {
+                            "customer_name": "0824/刘汉彬"
+                        },
+                        {
+                            "customer_name": "0824/吴校佳"
+                        },
+                        {
+                            "customer_name": "0824/威哥"
+                        },
+                        {
+                            "customer_name": "0824/平安"
+                        },
+                        {
+                            "customer_name": "0824/拉灯（张飞）"
+                        },
+                        {
+                            "customer_name": "0824/杨跃/揽胜行政版"
+                        },
+                        {
+                            "customer_name": "0824/燊榮記"
+                        },
+                        {
+                            "customer_name": "0824/阿霏"
+                        }
+                    ],
+                    "error_message": null,
+                    "error_details": null,
+                    "created_at": "2025-08-26 14:42:19",
+                    "updated_at": "2025-08-26 14:43:16"
+                },
+                "_previousDataValues": {
+                    "id": 1,
+                    "task_id": "mes6i4supwxor1a9wu",
+                    "file_name": "121314.jpg",
+                    "file_size": 450013,
+                    "file_type": "image/jpeg",
+                    "task_status": "completed",
+                    "start_time": "2025-08-26T06:42:19.000Z",
+                    "end_time": "2025-08-26T06:43:16.000Z",
+                    "total_time_ms": 55867,
+                    "api_call_time_ms": 54801,
+                    "base64_convert_time_ms": 1,
+                    "customers_extracted": 13,
+                    "customers_imported": 0,
+                    "customers_duplicated": 0,
+                    "customers_failed": 0,
+                    "extracted_data": [
+                        {
+                            "customer_name": "0824/A .9"
+                        },
+                        {
+                            "customer_name": "0824/A7. 源生达"
+                        },
+                        {
+                            "customer_name": "0824/mokiop"
+                        },
+                        {
+                            "customer_name": "0824/Shermay 婷"
+                        },
+                        {
+                            "customer_name": "0824/俊"
+                        },
+                        {
+                            "customer_name": "0824/刘汉彬"
+                        },
+                        {
+                            "customer_name": "0824/吴校佳"
+                        },
+                        {
+                            "customer_name": "0824/威哥"
+                        },
+                        {
+                            "customer_name": "0824/平安"
+                        },
+                        {
+                            "customer_name": "0824/拉灯（张飞）"
+                        },
+                        {
+                            "customer_name": "0824/杨跃/揽胜行政版"
+                        },
+                        {
+                            "customer_name": "0824/燊榮記"
+                        },
+                        {
+                            "customer_name": "0824/阿霏"
+                        }
+                    ],
+                    "error_message": null,
+                    "error_details": null,
+                    "created_at": "2025-08-26 14:42:19",
+                    "updated_at": "2025-08-26 14:43:16"
+                },
+                "uniqno": 1,
+                "_changed": {},
+                "_options": {
+                    "isNewRecord": false,
+                    "_schema": null,
+                    "_schemaDelimiter": "",
+                    "raw": true,
+                    "attributes": [
+                        "id",
+                        "task_id",
+                        "file_name",
+                        "file_size",
+                        "file_type",
+                        "task_status",
+                        "start_time",
+                        "end_time",
+                        "total_time_ms",
+                        "api_call_time_ms",
+                        "base64_convert_time_ms",
+                        "customers_extracted",
+                        "customers_imported",
+                        "customers_duplicated",
+                        "customers_failed",
+                        "extracted_data",
+                        "error_message",
+                        "error_details",
+                        "created_at",
+                        "updated_at"
+                    ]
+                },
+                "isNewRecord": false,
+                "_customGetters": {},
+                "_customSetters": {},
+                "validators": {},
+                "_hasCustomGetters": 0,
+                "_hasCustomSetters": 0,
+                "rawAttributes": {
+                    "id": {
+                        "type": {
+                            "options": {},
+                            "key": "INTEGER",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "primaryKey": true,
+                        "autoIncrement": true,
+                        "comment": "主键，自增ID",
+                        "fieldName": "id",
+                        "_modelAttribute": true,
+                        "field": "id"
+                    },
+                    "task_id": {
+                        "type": {
+                            "options": {
+                                "length": 50
+                            },
+                            "_length": 50,
+                            "key": "STRING",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": false,
+                        "unique": true,
+                        "comment": "任务ID（对应OCR控制器中的taskId）",
+                        "fieldName": "task_id",
+                        "_modelAttribute": true,
+                        "field": "task_id"
+                    },
+                    "file_name": {
+                        "type": {
+                            "options": {
+                                "length": 255
+                            },
+                            "_length": 255,
+                            "key": "STRING",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": false,
+                        "comment": "上传的文件名",
+                        "fieldName": "file_name",
+                        "_modelAttribute": true,
+                        "field": "file_name"
+                    },
+                    "file_size": {
+                        "type": {
+                            "options": {},
+                            "key": "INTEGER",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": false,
+                        "comment": "文件大小（字节）",
+                        "fieldName": "file_size",
+                        "_modelAttribute": true,
+                        "field": "file_size"
+                    },
+                    "file_type": {
+                        "type": {
+                            "options": {
+                                "length": 50
+                            },
+                            "_length": 50,
+                            "key": "STRING",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": false,
+                        "comment": "文件类型（MIME类型）",
+                        "fieldName": "file_type",
+                        "_modelAttribute": true,
+                        "field": "file_type"
+                    },
+                    "task_status": {
+                        "type": {
+                            "values": [
+                                "pending",
+                                "processing",
+                                "completed",
+                                "failed"
+                            ],
+                            "options": {
+                                "values": [
+                                    "pending",
+                                    "processing",
+                                    "completed",
+                                    "failed"
+                                ]
+                            },
+                            "key": "ENUM",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": false,
+                        "comment": "任务状态",
+                        "values": [
+                            "pending",
+                            "processing",
+                            "completed",
+                            "failed"
+                        ],
+                        "fieldName": "task_status",
+                        "_modelAttribute": true,
+                        "field": "task_status"
+                    },
+                    "start_time": {
+                        "type": {
+                            "options": {},
+                            "_length": "",
+                            "key": "DATE",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": false,
+                        "comment": "任务开始时间",
+                        "fieldName": "start_time",
+                        "_modelAttribute": true,
+                        "field": "start_time"
+                    },
+                    "end_time": {
+                        "type": {
+                            "options": {},
+                            "_length": "",
+                            "key": "DATE",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "comment": "任务结束时间",
+                        "fieldName": "end_time",
+                        "_modelAttribute": true,
+                        "field": "end_time"
+                    },
+                    "total_time_ms": {
+                        "type": {
+                            "options": {},
+                            "key": "INTEGER",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "comment": "总耗时（毫秒）",
+                        "fieldName": "total_time_ms",
+                        "_modelAttribute": true,
+                        "field": "total_time_ms"
+                    },
+                    "api_call_time_ms": {
+                        "type": {
+                            "options": {},
+                            "key": "INTEGER",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "comment": "AI API调用耗时（毫秒）",
+                        "fieldName": "api_call_time_ms",
+                        "_modelAttribute": true,
+                        "field": "api_call_time_ms"
+                    },
+                    "base64_convert_time_ms": {
+                        "type": {
+                            "options": {},
+                            "key": "INTEGER",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "comment": "文件转换耗时（毫秒）",
+                        "fieldName": "base64_convert_time_ms",
+                        "_modelAttribute": true,
+                        "field": "base64_convert_time_ms"
+                    },
+                    "customers_extracted": {
+                        "type": {
+                            "options": {},
+                            "key": "INTEGER",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "defaultValue": 0,
+                        "comment": "提取到的客户数量",
+                        "fieldName": "customers_extracted",
+                        "_modelAttribute": true,
+                        "field": "customers_extracted"
+                    },
+                    "customers_imported": {
+                        "type": {
+                            "options": {},
+                            "key": "INTEGER",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "defaultValue": 0,
+                        "comment": "成功导入的客户数量",
+                        "fieldName": "customers_imported",
+                        "_modelAttribute": true,
+                        "field": "customers_imported"
+                    },
+                    "customers_duplicated": {
+                        "type": {
+                            "options": {},
+                            "key": "INTEGER",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "defaultValue": 0,
+                        "comment": "去重的客户数量",
+                        "fieldName": "customers_duplicated",
+                        "_modelAttribute": true,
+                        "field": "customers_duplicated"
+                    },
+                    "customers_failed": {
+                        "type": {
+                            "options": {},
+                            "key": "INTEGER",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "defaultValue": 0,
+                        "comment": "导入失败的客户数量",
+                        "fieldName": "customers_failed",
+                        "_modelAttribute": true,
+                        "field": "customers_failed"
+                    },
+                    "extracted_data": {
+                        "type": {
+                            "key": "JSON",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "comment": "提取到的客户数据（JSON格式）",
+                        "fieldName": "extracted_data",
+                        "_modelAttribute": true,
+                        "field": "extracted_data"
+                    },
+                    "error_message": {
+                        "type": {
+                            "options": {},
+                            "_length": "",
+                            "key": "TEXT",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "comment": "错误信息（如果任务失败）",
+                        "fieldName": "error_message",
+                        "_modelAttribute": true,
+                        "field": "error_message"
+                    },
+                    "error_details": {
+                        "type": {
+                            "key": "JSON",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": true,
+                        "comment": "详细错误信息（JSON格式，包含失败的具体客户和原因）",
+                        "fieldName": "error_details",
+                        "_modelAttribute": true,
+                        "field": "error_details"
+                    },
+                    "created_at": {
+                        "type": {
+                            "options": {},
+                            "_length": "",
+                            "key": "DATE",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": false,
+                        "defaultValue": {
+                            "key": "NOW",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "comment": "记录创建时间",
+                        "fieldName": "created_at",
+                        "_modelAttribute": true,
+                        "field": "created_at"
+                    },
+                    "updated_at": {
+                        "type": {
+                            "options": {},
+                            "_length": "",
+                            "key": "DATE",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "allowNull": false,
+                        "defaultValue": {
+                            "key": "NOW",
+                            "dialectTypes": "https://dev.snowflake.com/doc/refman/5.7/en/data-types.html"
+                        },
+                        "comment": "记录更新时间",
+                        "fieldName": "updated_at",
+                        "_modelAttribute": true,
+                        "field": "updated_at"
+                    }
+                }
+            }
+        ],
+        "pagination": {
+            "total": 1,
+            "page": 1,
+            "limit": 10,
+            "totalPages": 1
+        }
+    },
+    "performance": {
+        "totalTime": "537ms"
+    }
+}
