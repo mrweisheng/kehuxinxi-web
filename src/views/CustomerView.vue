@@ -119,14 +119,24 @@
         </el-table-column>
       </el-table>
       <div class="pagination-bar">
-        <el-pagination
-          background
-          layout="prev, pager, next, jumper, ->, total"
-          :total="total"
-          :page-size="pageSize"
-          :current-page="page"
-          @current-change="onPageChange"
-        />
+        <div class="pagination-controls">
+          <span class="page-size-label">每页显示：</span>
+          <el-select v-model="pageSize" @change="onPageSizeChange" style="width: 80px">
+            <el-option label="5" :value="5" />
+            <el-option label="10" :value="10" />
+            <el-option label="20" :value="20" />
+            <el-option label="50" :value="50" />
+            <el-option label="100" :value="100" />
+          </el-select>
+          <el-pagination
+            background
+            layout="prev, pager, next, jumper, ->, total"
+            :total="total"
+            :page-size="pageSize"
+            :current-page="page"
+            @current-change="onPageChange"
+          />
+        </div>
       </div>
     </el-card>
     <LeadForm v-if="hasPermission('canCreateLeads')" v-model:visible="showAdd" :isEdit="false" @submit="handleAdd" />
@@ -317,6 +327,12 @@ function fetchList() {
 
 function onPageChange(val) {
   page.value = val
+  fetchList()
+}
+
+function onPageSizeChange(val) {
+  pageSize.value = val
+  page.value = 1 // 切换每页显示条数时，重置到第一页
   fetchList()
 }
 
@@ -687,7 +703,16 @@ onMounted(fetchList)
 }
 .pagination-bar {
   margin-top: 16px;
-  text-align: right;
+}
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.page-size-label {
+  font-size: 14px;
+  color: #606266;
 }
 .table-action-col .el-button + .el-button {
   margin-left: 0 !important;
